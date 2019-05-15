@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>天津大学学生课程管理系统</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="./admin_css/admin_score_student.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="top_block">
+        <div class="left_menu">
+            <img src="./files/logo.png" class="tju_logo">
+            <p class="title">天津大学学生课程管理系统（管理员端）</p>
+        </div>
+        <div class="right_menu">
+            <p class="username">管理员（admin）</p>
+            <p class="logout" id="logout">退出</p>
+        </div>
+    </div>
+
+    <div class="menu_block">
+        <div class="option home" id="home_left">
+            <span class="iconfont">&#xe60f 首页</span>
+        </div>
+
+        <div class="option profile" id="student_left">
+            <span class="iconfont">&#xe678 学生管理</span>
+        </div>
+
+        <div class="option score" id="score_left">
+            <span class="iconfont">&#xe612 成绩管理</span>
+        </div>
+
+        <div class="option course" id="course_left">
+            <span class="iconfont">&#xe6be 课程管理</span>
+        </div>
+
+        <div class="option select" id="select_left">
+            <span class="iconfont">&#xe606 选课</span>
+        </div>
+    </div>
+
+    <div class="main_block">
+        <div class="sub_menu_block">
+            <div class="sub_menu" id="student_menu">按学生查询</div>
+            <div class="sub_menu" id="class_menu">按班级查询</div>
+            <div class="sub_menu" id="course_menu">按课程查询</div>
+        </div>
+        <div class="main_content">
+            <div id="welcome">成绩管理（学生）</div>
+            <div id="score_title">输入学号或姓名以查询学生的成绩</div>
+            <div class="tip">学号</div>
+            <input type="text" id="sid1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" id="sid_button">查询</button>
+            <div class="tip">姓名</div>
+            <input type="text" id="sname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" id="sname_button">查询</button><br/>
+            <table id="score_table">
+                
+            </table>
+            <div id="average_title">该学生的课程总平均成绩为</div>
+            <div id="average"></div>
+            <div id="update_title">修改成绩/添加成绩（请先选课再登成绩）</div>
+            <div class="tip">学号</div>
+            <input type="text" id="sid">
+            <div class="tip">课程编号</div>
+            <input type="text" id="cid"><br/>
+            <div class="tip">年份</div>
+            <input type="text" id="time">
+            <div class="tip">成绩(删除成绩请输入-1)</div>
+            <input type="text" id="score"><br/>
+            <button class="submit" id="add_button">提交</button>
+        </div>
+    </div>
+    <script src="./scripts/admin_score_studenet.js"></script>
+</body>
+
+</html>

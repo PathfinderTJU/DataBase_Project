@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>天津大学学生课程管理系统</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="./admin_css/admin_main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="top_block">
+        <div class="left_menu">
+            <img src="./files/logo.png" class="tju_logo">
+            <p class="title">天津大学学生课程管理系统（管理员端）</p>
+        </div>
+        <div class="right_menu">
+            <p class="username">管理员（admin）</p>
+            <p class="logout" id="logout">退出</p>
+        </div>
+    </div>
+
+    <div class="menu_block">
+        <div class="option home" id="home_left">
+            <span class="iconfont">&#xe60f 首页</span>
+        </div>
+
+        <div class="option profile" id="student_left">
+            <span class="iconfont">&#xe678 学生管理</span>
+        </div>
+
+        <div class="option score" id="score_left">
+            <span class="iconfont">&#xe612 成绩管理</span>
+        </div>
+
+        <div class="option course" id="course_left">
+            <span class="iconfont">&#xe6be 课程管理</span>
+        </div>
+
+        <div class="option select" id="select_left">
+            <span class="iconfont">&#xe606 选课</span>
+        </div>
+    </div>
+
+    <div class="main_block">
+        <div class="main_content">
+            <div id="welcome">您好，管理员（admin）</div>
+            <div id="type">管理账户</div>
+            <div id="list">
+                使用提示<br/>
+                <ul>
+                    <li><span class="iconfont">&#xe60f</span>首页：可以返回到本页</li>
+                    <li><span class="iconfont">&#xe678</span>学生管理: 查看学生信息，增加、修改、删除学生信息</li>
+                    <li><span class="iconfont">&#xe612</span>成绩管理: 登记、修改成绩，查询学生、班级课程的成绩统计信息</li>
+                    <li><span class="iconfont">&#xe6be</span>课程管理: 查询课程的信息，增加、修改、删除课程信息</li>
+                    <li><span class="iconfont">&#xe606</span>选课：查看自己的选课信息，进行选退课操作</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/admin_main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>天津大学学生课程管理系统</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="./admin_css/admin_select_course.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="top_block">
+        <div class="left_menu">
+            <img src="./files/logo.png" class="tju_logo">
+            <p class="title">天津大学学生课程管理系统（管理员端）</p>
+        </div>
+        <div class="right_menu">
+            <p class="username">管理员（admin）</p>
+            <p class="logout" id="logout">退出</p>
+        </div>
+    </div>
+
+    <div class="menu_block">
+        <div class="option home" id="home_left">
+            <span class="iconfont">&#xe60f 首页</span>
+        </div>
+
+        <div class="option profile" id="student_left">
+            <span class="iconfont">&#xe678 学生管理</span>
+        </div>
+
+        <div class="option score" id="score_left">
+            <span class="iconfont">&#xe612 成绩管理</span>
+        </div>
+
+        <div class="option course" id="course_left">
+            <span class="iconfont">&#xe6be 课程管理</span>
+        </div>
+
+        <div class="option select" id="select_left">
+            <span class="iconfont">&#xe606 选课</span>
+        </div>
+    </div>
+
+    <div class="main_block">
+        <div class="main_content">
+            <div id="welcome">学生选课</div>
+            <div id="course_title">输入学号或姓名以查询学生的选课情况</div>
+            <div class="tip">学号</div>
+            <input type="text" id="sid">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" id="sid_button">查询</button>
+            <div class="tip">姓名</div>
+            <input type="text" id="sname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" id="sname_button">查询</button><br/>
+            <table id="course_table">
+
+            </table>
+            <div id="add_title">输入课程编号及年份为该学生增加课程</div>
+            <div class="tip">学生编号</div>
+            <input type="text" id="sid2">
+            <div class="tip">课程编号</div>
+            <input type="text" id="cid2">
+            <div class="tip">年份</div>
+            <input type="text" id="time"><br/>
+            <button class="submit" id="add_button">增加课程</button>
+            <div id="add_title">输入课程编号及年份为该学生删除课程</div>
+            <div class="tip">学生编号</div>
+            <input type="text" id="sid3">
+            <div class="tip">课程编号</div>
+            <input type="text" id="cid3">
+            <div class="tip">年份</div>
+            <input type="text" id="time2"><br/>
+            <button class="submit" id="delete_button">删除课程</button>
+        </div>
+    </div>
+    <script src="./scripts/admin_select_course.js"></script>
+</body>
+
+</html>

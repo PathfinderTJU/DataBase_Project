@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>天津大学学生课程管理系统</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="./student_css/student_select_course.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="top_block">
+        <div class="left_menu">
+            <img src="./files/logo.png" class="tju_logo">
+            <p class="title">天津大学学生课程管理系统（学生端）</p>
+        </div>
+        <div class="right_menu">
+            <p class="username" id="username">刘兴宇（3017218063）</p>
+            <p class="logout" id="logout">退出</p>
+        </div>
+    </div>
+
+    <div class="menu_block">
+        <div class="option home" id="home_left">
+            <span class="iconfont">&#xe60f 首页</span>
+        </div>
+
+        <div class="option profile" id="profile_left">
+            <span class="iconfont">&#xe678 个人中心</span>
+        </div>
+
+        <div class="option score" id="score_left">
+            <span class="iconfont">&#xe612 成绩查询</span>
+        </div>
+
+        <div class="option select" id="select_left">
+            <span class="iconfont">&#xe606 选课</span>
+        </div>
+    </div>
+
+    <div class="main_block">
+        <div class="main_content">
+            <div id="welcome">选课/退课</div>
+            <div id="course_title">全部课程目录</div>
+            <table id="course_table">
+                <tr>
+                    <td class="cell">课程编号</td>
+                    <td class="cell">课程名</td>
+                    <td class="cell">任课教师</td>
+                    <td class="cell">学分</td>
+                    <td class="cell">适合年级</td>
+                    <td class="cell">取消年份</td>
+                </tr>
+            </table>
+            <div id="select_title">已选课程目录</div>
+            <table id="select_table">
+                <tr>
+                    <td class="cell">课程编号</td>
+                    <td class="cell">课程名</td>
+                    <td class="cell">任课教师</td>
+                    <td class="cell">学分</td>
+                    <td class="cell">适合年级</td>
+                    <td class="cell">取消年份</td>
+                    <td class="cell">年份</td>
+                </tr>
+            </table>
+            <div id="select_title">输入课程编号及年份选课</div>
+            <div class="tip">课程编号</div>
+            <input type="text" id="cid1">
+            <div class="tip">年份</div>
+            <input type="text" id="time1"><br/>
+            <button class="submit" id="add_button">选课</button>
+            <div id="delete_title">输入课程编号及年份退课</div>
+            <div class="tip">课程编号</div>
+            <input type="text" id="cid2">
+            <div class="tip">年份</div>
+            <input type="text" id="time2"><br/>
+            <button class="submit" id="delete_button">退课</button>
+            </div>
+    </div>
+    <script src="./scripts/student_select_course.js"></script>
+</body>
+
+</html>

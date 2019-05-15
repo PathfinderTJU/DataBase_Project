@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>天津大学学生课程管理系统</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="./admin_css/admin_course.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="top_block">
+        <div class="left_menu">
+            <img src="./files/logo.png" class="tju_logo">
+            <p class="title">天津大学学生课程管理系统（管理员端）</p>
+        </div>
+        <div class="right_menu">
+            <p class="username">管理员（admin）</p>
+            <p class="logout" id="logout">退出</p>
+        </div>
+    </div>
+
+    <div class="menu_block">
+        <div class="option home" id="home_left">
+            <span class="iconfont">&#xe60f 首页</span>
+        </div>
+
+        <div class="option profile" id="student_left">
+            <span class="iconfont">&#xe678 学生管理</span>
+        </div>
+
+        <div class="option score" id="score_left">
+            <span class="iconfont">&#xe612 成绩管理</span>
+        </div>
+
+        <div class="option course" id="course_left">
+            <span class="iconfont">&#xe6be 课程管理</span>
+        </div>
+
+        <div class="option select" id="select_left">
+            <span class="iconfont">&#xe606 选课</span>
+        </div>
+    </div>
+
+    <div class="main_block">
+        <div class="main_content">
+            <div id="welcome">课程管理</div>
+            <div id="all_title">全部课程信息</div>
+            <table id="all_table">
+                <tr>
+                    <td class="cell">课程编号</td>
+                    <td class="cell">课程名</td>
+                    <td class="cell">老师</td>
+                    <td class="cell">学分</td>
+                    <td class="cell">适合年级</td>
+                    <td class="cell">取消年份</td>
+                </tr>
+            </table>
+            <div id="basic_title">输入课程编号或课程名以修改课程基本信息</div>
+            <div class="tip">课程编号</div>
+            <input type="text" id="cid">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" id="cid_query">查询</button>
+            <div class="tip">课程名</div>
+            <input type="text" id="cname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" id="cname_query">查询</button><br/>
+            <table id="basic_table">
+                <tr>
+                    <td class="cell">课程编号</td>
+                    <td class="cell" id="cid_cell"></td>
+                    <td class="cell">不可更改</td>
+                </tr>
+                <tr>
+                    <td class="cell">课程名</td>
+                    <td class="cell" id="cname_cell"></td>
+                    <td class="cell"><input type="text" width=30px class="update" id="cname_input"/>&nbsp;&nbsp;&nbsp;<button
+                            class="button" id="update_cname">修改</button></td>
+                </tr>
+                <tr>
+                    <td class="cell">老师</td>
+                    <td class="cell" id="teacher_cell"></td>
+                    <td class="cell"><input type="text" width=30px class="update" id="teacher_input"/>&nbsp;&nbsp;&nbsp;<button
+                            class="button" id="update_teacher">修改</button></td>
+                </tr>
+                <tr>
+                    <td class="cell">学分</td>
+                    <td class="cell" id="point_cell"></td>
+                    <td class="cell"><input type="text" width=30px class="update" id="point_input"/>&nbsp;&nbsp;&nbsp;<button
+                            class="button" id="update_point">修改</button></td>
+                </tr>
+                <tr>
+                    <td class="cell">适合年级</td>
+                    <td class="cell" id="suit_year_cell"></td>
+                    <td class="cell"><input type="text" width=30px class="update" id="suit_year_input"/>&nbsp;&nbsp;&nbsp;<button
+                            class="button" id="update_suit_year">修改</button></td>
+                </tr>
+                <tr>
+                    <td class="cell">取消年份</td>
+                    <td class="cell" id="cancel_year_cell"></td>
+                    <td class="cell"><input type="text" width=30px class="update" id="cancel_year_input"/>&nbsp;&nbsp;&nbsp;<button 
+                            class="button" id="cancel_button">修改</button></td>
+                </tr>
+            </table>
+            <div id="add_course_title">增加一门课程</div>
+            <table id="add_table">
+                <tr>
+                    <td class="cell">课程编号</td>
+                    <td class="cell"><input type="text" class="add" id="add_cid"/></td>
+                </tr>
+                <tr>
+                    <td class="cell">课程名</td>
+                    <td class="cell"><input type="text" class="add" id="add_cname"/></td>
+                </tr>
+
+                <tr>
+                    <td class="cell">老师</td>
+                    <td class="cell"><input type="text" class="add" id="add_teacher"/></td>
+                </tr>
+                <tr>
+                    <td class="cell">学分</td>
+                    <td class="cell"><input type="text" class="add" id="add_point"/></td>
+                </tr>
+                <tr>
+                    <td class="cell">适合年级</td>
+                    <td class="cell"><input type="text" class="add" id="add_suit_year"/></td>
+                </tr>
+                <tr>
+                    <td class="cell">取消年份</td>
+                    <td class="cell"><input type="text" class="add" id="add_cancel_year"/></td>
+                </tr>
+            </table>
+            <button class="submit" id="add_button">增加课程</button>
+            <div id="delete_course_title">删除一门课程</div>
+            <div class="tip">课程编号</div>
+            <input type="text" id="cid2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" id="delete_button">删除</button><br/>
+        </div>
+    </div>
+    <script src="./scripts/admin_course.js"></script>
+</body>
+
+</html>

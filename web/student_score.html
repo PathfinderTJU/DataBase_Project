@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>天津大学学生课程管理系统</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="./student_css/student_score.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="top_block">
+        <div class="left_menu">
+            <img src="./files/logo.png" class="tju_logo">
+            <p class="title">天津大学学生课程管理系统（学生端）</p>
+        </div>
+        <div class="right_menu">
+            <p class="username" id="username">刘兴宇（3017218063）</p>
+            <p class="logout" id="logout">退出</p>
+        </div>
+    </div>
+
+    <div class="menu_block">
+        <div class="option home" id ="home_left">
+            <span class="iconfont">&#xe60f 首页</span>
+        </div>
+
+        <div class="option profile" id="profile_left">
+            <span class="iconfont">&#xe678 个人中心</span>
+        </div>
+
+        <div class="option score" id="score_left">
+            <span class="iconfont">&#xe612 成绩查询</span>
+        </div>
+
+        <div class="option select" id="select_left">
+            <span class="iconfont">&#xe606 选课</span>
+        </div>
+    </div>
+
+    <div class="main_block">
+        <div class="main_content">
+            <div id="welcome">成绩管理</div>
+            <div id="score_title">输入课程编号或课程名以查询成绩</div>
+            <div class="tip">课程编号</div>
+            <input type="text" id="cid">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="submit" id="cid_button">查询</button>
+            <div class="tip">课程名</div>
+            <input type="text" id="cname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="submit" id="cname_button">查询</button>
+            <table id="score_table">
+            </table>
+            <div id="average_title">您的课程总平均成绩为</div>
+            <div id="average">90.343</div>
+        </div>
+    </div>
+    <script src="./scripts/student_score.js"></script>
+</body>
+
+</html>
